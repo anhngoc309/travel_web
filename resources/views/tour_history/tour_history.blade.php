@@ -11,14 +11,14 @@ $bookings=$ucontrolller->__getHistory();
 <table border="1" width="100%">
     <tr align="center">
         <th>#</th>
-        <th>Booking Id</th>
-        <th>Package Name</th>
-        <th>From</th>
-        <th>To</th>
-        <th>Comment</th>
-        <th>Status</th>
-        <th>Booking Date</th>
-        <th>Action</th>
+        <th>Mã tour</th>
+        <th>Tên gói</th>
+        <th>Đến</th>
+        <th>Từ</th>
+        <th>Bình luận</th>
+        <th>Trạng thái</th>
+        <th>Ngày đặt tour</th>
+        <th>Hoạt động</th>
     </tr>
     @foreach ($bookings as $booking)
     <tr align="center">
@@ -30,24 +30,24 @@ $bookings=$ucontrolller->__getHistory();
         <td>{{ $booking->comment }}</td>
         <td>
             @if ($booking->status == 0)
-                Pending
+                Đang chờ
             @elseif ($booking->status == 1)
-                Confirmed
+                Đã xác nhận
             @elseif ($booking->status == 2 && $booking->cancelby == 'u')
-                Canceled by you at {{ $booking->updated_at }}
+                Bạn đã hủy vào lúc {{ $booking->updated_at }}
             @elseif ($booking->status == 2 && $booking->cancelby == 'a')
-                Canceled by admin at {{ $booking->updated_at }}
+                Đã bị quản trị viên hủy vào lúc {{ $booking->updated_at }}
             @endif
         </td>
         <td>{{ $booking->created_at }}</td>
         @if ($booking->status == 2)
-        <td>Cancelled</td>
+        <td>Đã hủy</td>
         @else
         <td>
             <form action="{{ route('cancel_booking', ['BTid' => $booking->BTid]) }}" method="post">
                 @csrf <!-- Sử dụng @csrf để bảo vệ khỏi Cross-Site Request Forgery (CSRF) -->
 
-                <button type="submit" onclick="return confirm('Do you really want to cancel booking')" class="btn-cancel">Cancel</button>
+                <button type="submit" onclick="return confirm('Do you really want to cancel booking')" class="btn-cancel">Hủy</button>
             </form>
         </td>
         @endif
