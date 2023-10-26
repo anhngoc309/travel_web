@@ -6,7 +6,7 @@
 <div class="rooms">
 	<div class="container">
 		<div class="room-bottom">
-            <h3>Package List</h3>
+            <h3>Danh sách tour</h3>
             @php
                 $listTourController = new \App\Http\Controllers\HomeController();
                 $result = $listTourController->_getListTours('*');
@@ -24,7 +24,6 @@
                 $start = ($page - 1) * $perPage;
                 $visibleTours = $tours->slice($start, $perPage)->all();
                 $result['tours']=$visibleTours;
-                // Trong trang bạn đặt dữ liệu vào session
                 session(['result' => $result]);
                 $index =0;
             @endphp
@@ -34,9 +33,9 @@
                 <ul class="pagination justify-content-center">
                     <li class="page-item">
                         @if($page>1)
-                        <a class="page-link" href="{{ route('list_tour', ['page' => $page - 1]) }}">Trước</a>
+                        <a class="page-link" href="{{ route('list_tour', ['page' => $page - 1]) }}"><</a>
                         @else
-                        <a class="page-link" aria-disabled="true">Trước</a>
+                        <a class="page-link" aria-disabled="true"><</a>
                         @endif
                     </li>
 
@@ -49,9 +48,9 @@
                     {{--  --}}
                     <li class="page-item">
                         @if($page<$pages)
-                            <a class="page-link" href="{{ route('list_tour', ['page' => $page + 1]) }}">Sau</a>
+                            <a class="page-link" href="{{ route('list_tour', ['page' => $page + 1]) }}">></a>
                         @else
-                            <a class="page-link" aria-disabled="true">Sau</a>
+                            <a class="page-link" aria-disabled="true">></a>
                         @endif
                     </li>
                 </ul>

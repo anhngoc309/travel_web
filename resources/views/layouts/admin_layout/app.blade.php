@@ -16,7 +16,7 @@ session_start();
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>TMS | Admin Sign in</title>
+    <title>Quản trị viên đăng nhập</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -36,13 +36,11 @@ session_start();
     <!-- lined-icons -->
     <link rel="stylesheet" href="{{asset('css_admin/icon-font.min.css')}}" type='text/css' />
     <!-- //lined-icons -->
-    <!-- Các thẻ meta, các tệp CSS, và các thư viện JavaScript tại đây -->
 </head>
 <body>
     <div class="page-container">
         <div class="left-content">
             <header>
-                <!-- Đặt phần header chung ở đây -->
                 @include('admin/includes.header')
             </header>
             <main>

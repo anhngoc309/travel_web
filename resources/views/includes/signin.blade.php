@@ -20,16 +20,16 @@ error_reporting(0);
 									<div class="login-right">
 										<form method="POST" action="{{ route('signin') }}">
                                             @csrf
-											<h3>Signin with your account </h3>
-	                                            <input type="text" name="email" id="email" placeholder="Enter your Email"  required="">
-	                                            <input type="password" name="password" id="password" placeholder="Password" value="" required="">
-											    <h4><a href="{{ route('change_password') }}">Forgot password</a></h4>
-											<input type="submit" name="signin" value="SIGNIN">
+											<h3>Đăng nhập bằng tài khoản của bạn </h3>
+	                                            <input type="text" name="email" id="email" placeholder="Email"  required="">
+	                                            <input type="password" name="password" id="password" placeholder="Mật khẩu" value="" required="">
+											    <h4><a href="{{ route('change_password') }}">Quên mật khẩu</a></h4>
+											<input type="submit" name="signin" value="ĐĂNG NHẬP">
 										</form>
 									</div>
 									<div class="clearfix"></div>
 								</div>
-								<p>By logging in you agree to our <a href="{{ route('term') }}">Terms and Conditions</a> and <a href="{{ route('privacy') }}">Privacy Policy</a></p>
+								<p>Bằng cách đăng nhập, bạn đồng ý với chúng tôi <a href="{{ route('term') }}">Các điều khoản và điều kiện</a> và <a href="{{ route('privacy') }}">Chính sách bảo mật</a></p>
 							</div>
 						</div>
 					</div>

@@ -1,13 +1,13 @@
 <!--- routes ---->
 <div class="routes">
 	<div class="container">
-		<div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
+		{{-- <div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
 			<div class="rou-left">
 				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
 			</div>
 			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
 				<h3>80000</h3>
-				<p>Enquiries</p>
+				<p>Yêu cầu</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>
@@ -17,7 +17,7 @@
 			</div>
 			<div class="rou-rgt">
 				<h3>1900</h3>
-				<p>Regestered users</p>
+				<p>Người dùng đã đăng ký</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>
@@ -31,6 +31,6 @@
 			</div>
 				<div class="clearfix"></div>
 		</div>
-		<div class="clearfix"></div>
+		<div class="clearfix"></div> --}}
 	</div>
 </div>

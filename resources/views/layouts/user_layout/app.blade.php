@@ -17,7 +17,7 @@ error_reporting(0);
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TMS | Tourism Management System</title>
+        <title>Đặt tour trực tuyến</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 

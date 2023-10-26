@@ -22,7 +22,7 @@
     $index =0;
 @endphp
 <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Packages</li>
+    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a><i class="fa fa-angle-right"></i>Quản lý gói tour</li>
 </ol>
 <div class="agile-grids">
 @include('admin.manages.tours')
@@ -31,9 +31,9 @@
     <ul class="pagination justify-content-center">
         <li class="page-item">
             @if($page>1)
-            <a class="page-link" href="{{ route('admin.manage.tours', ['page' => $page - 1]) }}">Trước</a>
+            <a class="page-link" href="{{ route('admin.manage.tours', ['page' => $page - 1]) }}"><</a>
             @else
-            <a class="page-link" aria-disabled="true">Trước</a>
+            <a class="page-link" aria-disabled="true"><</a>
             @endif
         </li>
 
@@ -46,9 +46,9 @@
         {{--  --}}
         <li class="page-item">
             @if($page<$pages)
-                <a class="page-link" href="{{ route('admin.manage.tours', ['page' => $page + 1]) }}">Sau</a>
+                <a class="page-link" href="{{ route('admin.manage.tours', ['page' => $page + 1]) }}">></a>
             @else
-                <a class="page-link" aria-disabled="true">Sau</a>
+                <a class="page-link" aria-disabled="true">></a>
             @endif
         </li>
     </ul>

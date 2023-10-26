@@ -9,7 +9,7 @@
                 <i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
             </div>
             <div class="four-text">
-                <h3>Bookings</h3>
+                <h3>Đặt tour</h3>
                 <h4>{{ $bookingCount }}</h4>
             </div>
         </div>
@@ -20,7 +20,7 @@
                 <i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
             </div>
             <div class="four-text">
-                <h3>issues</h3>
+                <h3>Vấn đề</h3>
                 <h4>{{ $issueCount }}</h4>
             </div>
         </div>
@@ -31,7 +31,7 @@
                 <i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
             </div>
             <div class="four-text">
-                <h3>packages</h3>
+                <h3>Gói tour</h3>
                 <h4>{{ $packageCount }}</h4>
             </div>
         </div>

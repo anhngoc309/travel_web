@@ -15,25 +15,25 @@
             // dd($user);
             if ($user) { ?>
                 <p style="width: 350px;">
-                    <b>Name</b> <input type="text" name="name" value="<?php echo htmlentities($user->Name); ?>" class="form-control" id="name" required="">
+                    <b>Họ tên</b> <input type="text" name="name" value="<?php echo htmlentities($user->Name); ?>" class="form-control" id="name" required="">
                 </p>
                 <p style="width: 350px;">
-                    <b>Mobile Number</b>
+                    <b>Số điện thoại</b>
                     <input type="text" class="form-control" name="mobileno" maxlength="10" value="<?php echo htmlentities($user->Phone_number); ?>" id="mobileno" required="">
                 </p>
                 <p style="width: 350px;">
-                    <b>Email Id</b>
+                    <b>Email</b>
                     <input type="email" class="form-control" name="email" value="<?php echo htmlentities($user->Email); ?>" id="email" readonly>
                 </p>
                 <p style="width: 350px;">
-                    <b>Last Updation Date:</b> <?php echo htmlentities($user->updated_at); ?>
+                    <b>Cập nhật lần cuối: </b> <?php echo htmlentities($user->updated_at); ?>
                 </p>
                 <p style="width: 350px;">
-                    <b>Reg Date:</b> <?php echo htmlentities($user->created_at); ?>
+                    <b>Ngày đăng ký</b> <?php echo htmlentities($user->created_at); ?>
                 </p>
             <?php } ?>
             <p style="width: 350px;">
-                <button type="submit" name="submit6" class="btn-primary btn">Update</button>
+                <button type="submit" name="submit6" class="btn-primary btn">Cập nhật</button>
             </p>
         </form>
     </div>
